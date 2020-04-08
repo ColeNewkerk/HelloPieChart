@@ -10,6 +10,12 @@ public class DataExtractor {
 
     public static List<Pair<String, Integer>> extractDataFromJSON(String rawJson) {
         // TODO
+        int SomeInt = 0;
+        String string = "";
+        JsonParser jsonParser = new JsonParser();
+        JsonElement rootElement = jsonParser.parse(rawJson);
+        JsonObject rootObject = rootElement.getAsJsonObject();
+        Pair.with(string,SomeInt);
         return null;
     }
 
